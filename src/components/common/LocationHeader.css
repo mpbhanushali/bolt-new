@@ -1,0 +1,50 @@
+.location-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 16px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  margin: 16px 0;
+  color: white;
+}
+
+.location-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.location-icon {
+  font-size: 24px;
+}
+
+.location-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.location-text span {
+  font-size: 12px;
+  opacity: 0.9;
+}
+
+.location-text strong {
+  font-size: 14px;
+}
+
+.detect-store-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+}
+
+.store-icon {
+  font-size: 16px;
+}

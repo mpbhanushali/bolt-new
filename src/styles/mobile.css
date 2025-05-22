@@ -1,0 +1,125 @@
+/* Mobile-first styles */
+:root {
+  --primary-color: #0071dc;
+  --secondary-color: #ffc220;
+  --text-color: #2e2f32;
+  --background-color: #f8f9fa;
+}
+
+/* Base styles and viewport configuration */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Mobile container */
+.container {
+  max-width: 100%;
+  padding: 0 1rem;
+  margin: 0 auto;
+  height: 96%;
+}
+
+/* Header styles */
+.header {
+  background-color: var(--primary-color);
+  padding: 0.75rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header-logo{
+    display: flex;
+    gap: 5;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-logo .logo {
+  height: 32px;
+  width: auto;
+}
+
+.header-cart {
+  font-size: 1.5rem;
+  color: white;
+}
+
+/* Search bar */
+.search-bar {
+  background: white;
+  border-radius: 20px;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Location selector */
+.location-selector {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  color: var(--text-color);
+  font-size: 0.875rem;
+}
+
+/* Store map widget */
+.store-map {
+  background: white;
+  border-radius: 8px;
+  padding: 1rem;
+  margin: 1rem 0;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Category shortcuts */
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+  padding: 1rem 0;
+}
+
+.category-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.5rem;
+}
+
+.category-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.category-label {
+  font-size: 0.75rem;
+  color: var(--text-color);
+}
