@@ -35,7 +35,7 @@ const categories = [
       {
         breakpoint: 480,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 4,
         }
       }
     ],

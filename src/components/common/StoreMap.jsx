@@ -1,5 +1,8 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
+
 const StoreMap = () => {
+  const navigate = useNavigate();
   return (
     <div className="store-map">
       <div style={{ display: "flex", justifyContent: 'space-between' }}>
@@ -18,6 +21,7 @@ const StoreMap = () => {
               borderRadius: "20px",
               cursor: "pointer",
             }}
+            onClick={() => navigate('/store-map')}
           >
             View map
           </button>
